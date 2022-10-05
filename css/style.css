@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    background: #ecf0f1;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    max-width: 400px;
+    padding: 0.7rem 0 0.7rem 0;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+#input_search {
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 300px;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+}
+
+main {
+    width: 40%;
+}
+
+main h1 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+aside {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.graph {
+    width: 50%;
+}
+
+.graph > div {
+    background-color: #d9d9d9;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: grey 2px 2px 7px;
+}
+
+.data-chiffre {
+    width: 100%;
+    box-shadow: grey 2px 2px 7px;
+    border-radius: 2rem;
+    background-color: #d9d9d9;
+    margin: 10px;
+    padding: 2rem;
+}
+
+.data-chiffre span {
+    font-weight: bold;
+}
+
+#legende_map {
+    width: 26px;
+    position: absolute;
+    margin: -0.6rem 0 0 1rem;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #d4d4d4;
+    color: #000000;
+    border-top: #868686 2px solid;
+    padding: 8px 0;
+    margin-top: 1rem;
+}
+
+footer > a {
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 4px;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .graph {
+        width: 100%;
+    }
+}
+
+/* Class utilitaire pour une nouvelle ligne dans un flex */
+.break {
+    flex-basis: 100%;
+    width: 0;
+}

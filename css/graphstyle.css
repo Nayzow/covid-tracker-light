@@ -1,0 +1,10 @@
+.line-chart {
+    animation: fadeIn 600ms cubic-bezier(.57,.25,.65,1) 1 forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
